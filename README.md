@@ -75,4 +75,4 @@ Python · Pandas · NumPy · pandas-ta · Matplotlib · Seaborn · Binance API
 ---
 
 *Developed by Augusto Danna*  
-[LinkedIn](#) · [augusto@email.com](#)
+[[LinkedIn](https://www.linkedin.com/in/augusto-danna-0a0423195/)](#) · [augustomartindanna16@gmail.com](#)
