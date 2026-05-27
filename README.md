@@ -1,55 +1,77 @@
-# ALGOCODE
-Modular architecture for financial data processing and automated strategy execution. Focused on high-performance analysis, robust error handling, and scalable technical solutions.
+# ALGOCODE — Algorithmic Trading Infrastructure
+
+Built by a trader with 7 years of live market experience.  
+This is not academic code — it's the infrastructure I use to test and validate real strategies across multiple asset classes.
+
+My edge is not just technical: I understand the problem from the inside.  
+I know what a real drawdown feels like, why friction costs destroy most strategies, and how to build systems that survive out-of-sample.
 
 ---
 
-# ALGOCODE - Arquitectura de Sistemas Financieros
+## What This System Does
 
-Este repositorio contiene fragmentos de código y ejemplos de mi enfoque para el desarrollo de sistemas financieros automatizados.
-
-## Mi Enfoque
-Mi trabajo se centra en la intersección entre la ingeniería de software y los mercados financieros. Me especializo en:
-
-* **Arquitectura de Datos:** Procesamiento eficiente y limpieza de series temporales (ETL Pipelines).
-* **Robustez:** Implementación de pruebas de estrés (Stress testing) y validación fuera de muestra (Out-of-sample) para asegurar la fiabilidad de los modelos.
-* **Gestión de Ejecución:** Desarrollo de lógica para el manejo de excepciones, cálculo de fricción institucional y optimización de backtesting.
-
-## Estructura del Repositorio
-* `binance_futures_etl.py`: Pipeline ETL automatizado para la descarga, normalización y estructuración de datos OHLCV de alta frecuencia desde Binance Vision.
-* `institutional_momentum_engine.py`: Motor de backtesting orientado a objetos para modelos base (Baseline Momentum), incluyendo Stop-Loss dinámicos y auditoría estricta de costos de fricción (Spread/Slippage).
-* `walk_forward_optimizer.py`: Validador de estrategias genérico que implementa particiones In-Sample / Out-of-Sample para pruebas de robustez y mitigación de *overfitting*.
-* `correlation_analysis.py`: Módulo de análisis estadístico para evaluar la diversificación del portafolio mediante matrices de correlación de Pearson.
-* `performance_heatmaps.py`: Herramienta de visualización avanzada para auditar la consistencia histórica y estacionalidad de los retornos a través de mapas de calor.
-
-## Nota sobre confidencialidad
-Este repositorio contiene ejemplos de **estructura técnica**, **arquitectura de datos** y **diseño de clases**. Por razones de confidencialidad estratégica y propiedad intelectual, la lógica matemática exacta de entrada/salida y los parámetros de mis estrategias privadas han sido omitidos o reemplazados por datos simulados (*Mock Data*).
+- Downloads and normalizes high-frequency OHLCV data (ETL pipeline)
+- Runs structured backtests with dynamic Stop-Loss and strict friction auditing
+- Validates strategies using Walk-Forward (In-Sample / Out-of-Sample splits)
+- Analyzes portfolio diversification via Pearson correlation matrices
+- Visualizes return consistency and seasonality through performance heatmaps
 
 ---
-*Desarrollado por Augusto Danna*
+
+## Results
+
+### Equity Curve — Multi-Asset Portfolio (NAS100 · SPX500 · USDCAD)
+*5-year backtest · Net PnL in R-multiples after all broker costs*
+
+![Equity Curve](assets/equity_curve.png)
 
 ---
+
+### Institutional Audit — Year-by-Year Breakdown with Friction Costs
+*Full cost transparency: spread, slippage, and broker fees deducted from every trade*
+
+![Auditoria Institucional](assets/auditoria_resultados.png)
+
 ---
 
-# ALGOCODE - Financial Systems Architecture
+### Monthly Return Heatmap — Crypto Portfolio (BTC · ETH · SOL · AVAX)
+*Return consistency audit across 6 years · Values in R-multiples*
 
-This repository contains code snippets and examples of my approach to building automated financial systems.
+![Heatmap Crypto](assets/heatmap_crypto.png)
 
-## My Approach
-My work focuses on the intersection of software engineering and financial markets. I specialize in:
+---
 
-* **Data Architecture:** Efficient processing and cleaning of time-series data (ETL Pipelines).
-* **Robustness:** Implementing stress testing and out-of-sample validation to ensure model reliability and prevent overfitting.
-* **Execution Management:** Developing logic for exception handling, institutional friction calculation, and backtesting optimization.
+### Strategy Correlation Matrix — Crypto Portfolio
+*Daily return correlation between strategies · Near-zero cross-correlation confirms diversification*
+
+![Correlacion Crypto](assets/correlacion_crypto.png)
+
+---
 
 ## Repository Structure
-* `binance_futures_etl.py`: Automated ETL pipeline for downloading, normalizing, and structuring high-frequency OHLCV data from Binance Vision.
-* `institutional_momentum_engine.py`: OOP backtesting engine for baseline momentum models, featuring dynamic Stop-Loss management and strict frictional cost auditing (Spread/Slippage).
-* `walk_forward_optimizer.py`: Generic strategy validator implementing In-Sample / Out-of-Sample splitting for robustness testing and overfitting mitigation.
-* `correlation_analysis.py`: Statistical analysis module to evaluate portfolio diversification using Pearson correlation matrices.
-* `performance_heatmaps.py`: Advanced visualization tool to audit historical consistency and seasonality of returns through heatmaps.
 
-## Confidentiality Note
-This repository contains examples of **technical structure**, **data architecture**, and **class design**. For reasons of strategic confidentiality and intellectual property, the exact mathematical entry/exit logic and parameters of my private active strategies have been omitted or replaced with simulated data (*Mock Data*).
+| File | Description |
+|---|---|
+| `binance_futures_etl.py` | Automated ETL pipeline for high-frequency OHLCV data from Binance Vision |
+| `institutional_momentum_engine.py` | OOP backtesting engine with dynamic Stop-Loss and full friction cost auditing |
+| `walk_forward_optimizer.py` | Generic strategy validator with In-Sample / Out-of-Sample splitting |
+| `correlation_analysis.py` | Portfolio diversification analysis via Pearson correlation matrices |
+| `performance_heatmaps.py` | Return consistency and seasonality visualization |
 
 ---
-*Developed by Augusto Danna*
+
+## Confidentiality Note
+
+This repository contains examples of **technical structure**, **data architecture**, and **class design**.  
+The exact entry/exit logic and parameters of my active strategies have been omitted or replaced with simulated data.
+
+---
+
+## Stack
+
+Python · Pandas · NumPy · pandas-ta · Matplotlib · Seaborn · Binance API
+
+---
+
+*Developed by Augusto Danna*  
+[LinkedIn](#) · [augusto@email.com](#)
