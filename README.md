@@ -23,28 +23,29 @@ I know what a real drawdown feels like, why friction costs destroy most strategi
 ### Equity Curve — Multi-Asset Portfolio (NAS100 · SPX500 · USDCAD)
 *5-year backtest · Net PnL in R-multiples after all broker costs*
 
-![Equity Curve](assets/equity_curve.png)
+![Equity Curve](assets/equity_curve.png.PNG)
 
 ---
 
 ### Institutional Audit — Year-by-Year Breakdown with Friction Costs
 *Full cost transparency: spread, slippage, and broker fees deducted from every trade*
 
-![Auditoria Institucional](assets/auditoria_resultados.png)
+![Auditoria Institucional](assets/auditoria_resultados.png.PNG)
 
 ---
 
 ### Monthly Return Heatmap — Crypto Portfolio (BTC · ETH · SOL · AVAX)
 *Return consistency audit across 6 years · Values in R-multiples*
 
-![Heatmap Crypto](assets/heatmap_crypto.png)
+![Heatmap Crypto](assets/heatmap_crypto.png.PNG)
 
 ---
 
 ### Strategy Correlation Matrix — Crypto Portfolio
 *Daily return correlation between strategies · Near-zero cross-correlation confirms diversification*
 
-![Correlacion Crypto](assets/correlacion_crypto.png)
+![Correlacion Crypto](assets/correlacion_crypto.png.PNG)
+
 
 ---
 
