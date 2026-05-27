@@ -58,6 +58,7 @@ I know what a real drawdown feels like, why friction costs destroy most strategi
 | `walk_forward_optimizer.py` | Generic strategy validator with In-Sample / Out-of-Sample splitting |
 | `correlation_analysis.py` | Portfolio diversification analysis via Pearson correlation matrices |
 | `performance_heatmaps.py` | Return consistency and seasonality visualization |
+| `COST_MODEL.md` | Technical reference: cost modeling, slippage, rebates and net R across BloFin, Bitget and BingX |
 
 ---
 
