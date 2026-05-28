@@ -8,7 +8,7 @@ I know what a real drawdown feels like, why friction costs destroy most strategi
 
 ---
 
-## What This System Does
+## What Does This System do
 
 - Downloads and normalizes high-frequency OHLCV data (ETL pipeline)
 - Runs structured backtests with dynamic Stop-Loss and strict friction auditing
